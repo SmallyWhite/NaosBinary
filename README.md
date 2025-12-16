@@ -106,4 +106,4 @@ Les binaires ou bibliothèques sont fournis sous NDA.
 
 Stephen Hengel  
 Créateur de NaosBinary  
-Email : <TON_EMAIL>
+Email : mr.hengel.stephen@gmail.com
