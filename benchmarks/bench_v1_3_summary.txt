@@ -1,0 +1,60 @@
+NaosBinary v1.3 – Extended Benchmark Summary
+============================================================
+
+[Flux] alternating
+  Best ratio   : brotli (DEFAULT) -> 0.000014
+  Best comp MB/s : lz4 (frame) -> 22405.299
+  Best decomp MB/s : zstd (DEFAULT) -> 3559.319
+
+[Flux] bit_noise
+  Best ratio   : bz2 (DEFAULT) -> 0.094778
+  Best comp MB/s : lz4 (frame) -> 922.880
+  Best decomp MB/s : lz4 (frame) -> 1210.547
+
+[Flux] blocky
+  Best ratio   : bz2 (DEFAULT) -> 0.000053
+  Best comp MB/s : lz4 (frame) -> 20479.844
+  Best decomp MB/s : zstd (DEFAULT) -> 4460.131
+
+[Flux] ones
+  Best ratio   : NaosBinary (AUTO) -> 0.000007
+  Best comp MB/s : lz4 (frame) -> 22405.522
+  Best decomp MB/s : zstd (DEFAULT) -> 5125.007
+
+[Flux] patterned_header
+  Best ratio   : bz2 (DEFAULT) -> 0.847983
+  Best comp MB/s : snappy (DEFAULT) -> 759.233
+  Best decomp MB/s : lz4 (frame) -> 2063.721
+
+[Flux] random
+  Best ratio   : NaosBinary (AUTO) -> 1.000005
+  Best comp MB/s : snappy (DEFAULT) -> 2215.457
+  Best decomp MB/s : zstd (DEFAULT) -> 5598.373
+
+[Flux] repeating_pattern
+  Best ratio   : brotli (DEFAULT) -> 0.000020
+  Best comp MB/s : lz4 (frame) -> 22405.299
+  Best decomp MB/s : zstd (DEFAULT) -> 3561.740
+
+[Flux] sensor_drift
+  Best ratio   : bz2 (DEFAULT) -> 0.321754
+  Best comp MB/s : lz4 (frame) -> 608.399
+  Best decomp MB/s : lz4 (frame) -> 1790.908
+
+[Flux] sine_wave
+  Best ratio   : brotli (DEFAULT) -> 0.000236
+  Best comp MB/s : lz4 (frame) -> 19346.523
+  Best decomp MB/s : zstd (DEFAULT) -> 3977.904
+
+[Flux] zeros
+  Best ratio   : NaosBinary (AUTO) -> 0.000006
+  Best comp MB/s : lz4 (frame) -> 22453.556
+  Best decomp MB/s : zstd (DEFAULT) -> 5391.131
+
+Domain assessment
+------------------------------------------------------------
+IoT / capteurs: avg ratio=1.015 (WARN) best=bz2/DEFAULT->0.321754 | avg comp=0.12 GB/s (WARN) best=lz4/frame->0.59 GB/s | note: RLE dominant
+Télécoms: avg ratio=0.762 (WARN) best=brotli/DEFAULT->0.000014 | avg comp=2.16 GB/s (WARN) best=lz4/frame->21.88 GB/s | note: Auto stable
+Jeux / simulations: avg ratio=0.355 (WARN) best=brotli/DEFAULT->0.000020 | avg comp=4.11 GB/s (WARN) best=lz4/frame->21.88 GB/s | note: BitPack optimal
+Données aléatoires / LLM: avg ratio=1.301 (WARN) best=NaosBinary/AUTO->1.000005 | avg comp=0.53 GB/s (OK) best=snappy/DEFAULT->2.16 GB/s | note: No-compress
+Audio / texte: no data
