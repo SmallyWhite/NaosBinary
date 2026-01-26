@@ -25,3 +25,9 @@ Le code source est propriétaire, mais vous pouvez tester la puissance du moteur
 
 ## 📩 Contact
 **Stephen Hengel** Email : mr.hengel.stephen@gmail.com
+---
+
+## ⚖️ Licence & Usage
+L'exécutable fourni dans ce dépôt est destiné exclusivement à des fins d'**évaluation technique et de démonstration**. 
+- Toute utilisation commerciale, redistribution ou ingénierie inverse est strictement interdite sans une licence explicite.
+- Pour obtenir une licence commerciale (accès aux bibliothèques d'intégration, support technique, code source), veuillez me contacter par email.
