@@ -21,7 +21,7 @@ Il utilise une approche systémique unique pour atteindre des débits dépassant
 ## 🚀 Tester la Performance
 Le code source est propriétaire, mais vous pouvez tester la puissance du moteur :
 1. Téléchargez l'exécutable dans `/bin`.
-2. Lancez `demo/demo_script.bat` pour voir les résultats sur votre machine.
+2. Lancez `demo/run_bench.bat` pour voir les résultats sur votre machine.
 
 ## 📩 Contact
 **Stephen Hengel** Email : mr.hengel.stephen@gmail.com
