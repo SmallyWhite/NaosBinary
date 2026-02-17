@@ -1,33 +1,36 @@
-# 🚀 NaosBinary v1.3 - Hybrid High-Speed Compression
+# 🌌 NaosBinary v2.0 — Native Industrial Core
 
-**NaosBinary** est un moteur de compression binaire propriétaire ultra-rapide optimisé pour les données IoT, la télémétrie LPWAN et les matrices creuses pour l'IA.
+**Le moteur de compression binaire ultra-haute performance conçu pour l'IoT et les infrastructures critiques.**
 
-Il utilise une approche systémique unique pour atteindre des débits dépassant les **22 GB/s** sur des flux spécifiques, tout en garantissant une sécurité totale sur les données aléatoires.
+[![Release](https://img.shields.io/badge/release-v2.0.0--native-blue.svg)](releases/)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey.svg)]()
 
-## ✨ Points Forts (v1.3)
-- **Vitesse Extrême :** > 22 GB/s sur flux structurés (IoT/Silence).
-- **Zéro Gonflement :** Ratio de **1.00 garanti** sur données aléatoires ou chiffrées (Mode Pass-through).
-- **Efficacité IoT :** Ratio de compression jusqu'à **0.000006** (x166,000) sur les suites de bits répétitives.
-- **Léger :** Conçu pour une latence prédictible et une faible consommation CPU.
+## 🚀 Pourquoi NaosBinary v2.0 ?
 
-## 📊 Performance en un clin d'œil
-| Flux Type | Codec | Ratio | Vitesse |
-|---|---|---|---|
-| IoT (Silence) | AUTO | **0.000006** | **22 GB/s** |
-| Crypto (Random) | AUTO | **1.00** | 30 MB/s |
+La v2.0 marque le passage d'un prototype algorithmique à un **cœur natif C++**. Là où les compresseurs standards (Zlib, LZ4) peinent sur les flux binaires machines, NaosBinary exploite directement la puissance du processeur :
 
-*Détails complets dans le fichier [BENCHMARKS.md](./BENCHMARKS.md).*
+1.  **Vitesse Native** : Jusqu'à **38,4 Gbps** (4,8 Go/s) sur architecture standard.
+2.  **Latence Prédictible** : Traitement en une seule passe (Single-pass), idéal pour le temps réel.
+3.  **Souveraineté** : Algorithme propriétaire conçu pour minimiser l'empreinte carbone des transferts de données.
 
-## 🚀 Tester la Performance
-Le code source est propriétaire, mais vous pouvez tester la puissance du moteur :
-1. Téléchargez l'exécutable dans `/bin`.
-2. Lancez `demo/run_bench.bat` pour voir les résultats sur votre machine.
+## ⚡ Performances (v2.0)
 
-## 📩 Contact
-**Stephen Hengel** Email : mr.hengel.stephen@gmail.com
+| Scénario | Ratio Compression | Vitesse (Native) |
+|---|---|---|
+| **IoT (Logic Pulse)** | **0.125** (x8) | **~39.2 Gbps** |
+| **Sensor Data (Drift)**| **0.003** (x333) | **~17.3 Gbps** |
+| **Silence (Zeros/Ones)**| **< 0.000001** | **~17.6 Gbps** |
+
+> Voir l'analyse détaillée : BENCHMARKS.md
+
+## 🛡️ Technologie & Confidentialité
+
+NaosBinary utilise un moteur **Native-X** propriétaire. Pour garantir la sécurité et l'avantage concurrentiel de nos partenaires, le code source du cœur de compression n'est pas public. 
+
+L'intégration se fait via une bibliothèque dynamique (`naos.dll` / `naos.so`) avec des bridges disponibles pour :
+* **Python** (Ctypes)
+* **C++** (Natif)
+* **C# / Java** (JNI)
+
 ---
-
-## ⚖️ Licence & Usage
-L'exécutable fourni dans ce dépôt est destiné exclusivement à des fins d'**évaluation technique et de démonstration**. 
-- Toute utilisation commerciale, redistribution ou ingénierie inverse est strictement interdite sans une licence explicite.
-- Pour obtenir une licence commerciale (accès aux bibliothèques d'intégration, support technique, code source), veuillez me contacter par email.
+*Développé par Naos Tech - Pour toute demande de licence : mr.hengel.stephen@gmail.com*
