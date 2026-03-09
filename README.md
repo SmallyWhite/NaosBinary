@@ -1,55 +1,25 @@
-# 🌌 NaosBinary v2.0 — Native Industrial Core
+# 🌌 NaosBinary v2.0 — Edge Hybrid Smart-Router
 
-**Le moteur de compression binaire ultra-haute performance conçu pour l'IoT industriel, la télémétrie critique et les infrastructures IA.**
+**Le moteur de routage intelligent ultra-léger (DLL de 96 Ko) conçu spécifiquement pour la MedTech, l'IoT industriel et les infrastructures critiques.**
 
-[![Release](https://img.shields.io/badge/release-v2.0.0--native-blue.svg)](releases/)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey.svg)]()
-[![License](https://img.shields.io/badge/license-Proprietary-red.svg)]()
+La v2.0 marque le passage d'un compresseur standard à un **cœur natif C++ (Native-x)**. NaosBinary n'est pas un simple algorithme de réduction, c'est un routeur matériel qui analyse la donnée en temps réel pour garantir l'efficience sans jamais saturer le CPU.
 
----
+## 🧠 L'Innovation : Le Cerveau Hybride
+Le moteur analyse l'entropie du flux binaire à la volée, sans dictionnaire en RAM, et bascule instantanément vers la stratégie la plus adaptée :
+1. **🟩 Optimisation Dynamique :** Si la donnée présente une faible complexité structurelle (ex: Imagerie médicale IRM, télémétrie IoT), le moteur réduit massivement le volume.
+2. **🟦 Routage Passif :** Si la donnée est chaotique ou chiffrée (ex: Poids IA, flux réseau saturé), le moteur le détecte et sécurise le flux (Hardware Bypass) à la vitesse de la RAM pour éviter tout crash.
 
-## 🚀 L'Évolution Native
-La v2.0 marque le passage d'un prototype algorithmique à un **cœur natif C++ (Engine Native-X)**. Conçu pour saturer la bande passante matérielle, NaosBinary redéfinit les standards de l'efficience.
+## 🛡️ Fiabilité Industrielle Absolue
+* **Intégrité 100 % Lossless :** Chaque bit restauré est mathématiquement identique à la source, vérifié par empreinte **SHA-256**.
+* **Zéro Fuite de Mémoire :** Capacité de traitement validée sur des stress-tests de >15 000 fichiers séquentiels.
+* **Empreinte Minimale :** Idéal pour l'Edge Computing et les microcontrôleurs.
 
-* **⚡ Vitesse de Rupture** : Jusqu'à **38,4 Gbps** (4,8 Go/s) sur architecture standard.
-* **🌱 Efficience Énergétique** : Réduction drastique des cycles CPU, idéale pour l'Edge Computing.
-* **⏱️ Latence Déterministe** : Traitement en une seule passe (Single-pass), sans buffers intermédiaires.
+📊 *L'analyse détaillée des performances (MedTech vs IA) est disponible dans le fichier `BENCHMARKS.md`.*
 
----
-
-## ⚡ Performances Certifiées (v2.0)
-
-| Scénario | Type de Flux | Ratio | Vitesse (Native) |
-| :--- | :--- | :--- | :--- |
-| **IoT / Logic Pulse** | Alternating Bits | **0.125** | **~39.2 Gbps** |
-| **Sensor Data** | Drift / Télémétrie | **0.003** | **~17.3 Gbps** |
-| **Static Stream** | Silence (0/1) | **< 10⁻⁶** | **~17.6 Gbps** |
-
-> 📊 **Analyse comparative complète (vs LZ4, Zstd, Zlib) disponible dans BENCHMARKS.md**
-
----
-
-## 📂 Structure du Projet
-
-* **`/benchmarks`** : Rapports de performance et fichiers `.csv` certifiés.
-* **`/docs`** : Documentation technique, architecture du moteur et analyses de ROI.
-* **`/bin`** : Accès réservé aux binaires (DLL/SO) sous licence.
-
----
-
-## 🛡️ Technologie & Confidentialité
-NaosBinary est une technologie propriétaire. Pour garantir l'avantage concurrentiel de nos partenaires et la sécurité du code source, l'accès au moteur est strictement encadré.
-
-### 🤝 Évaluation Industrielle (Proof of Concept)
-Nous proposons aux infrastructures critiques (Énergie, IT, Défense) des tests de performance sur leurs propres flux de données.
+## 🤝 Évaluation Industrielle (Proof of Concept)
+Nous proposons aux infrastructures critiques des tests de performance sur leurs propres flux de données. 
 1. **Signature de NDA** : Protection mutuelle de la propriété intellectuelle.
 2. **Audit de ROI** : Analyse concrète des gains de bande passante et de stockage.
 3. **Accès Binaire** : Fourniture de la bibliothèque `naos.dll` / `naos.so` pour intégration pilote.
 
----
-
-## 📩 Contact Stratégique
-Pour toute demande de documentation technique ou organisation d'un PoC :
-
-**Stephen Hengel** 📧 mr.hengel.stephen@gmail.com 
-*Naos Tech — L'avenir de la donnée commence par sa maîtrise.*
+📩 **Contact Stratégique :** Stephen Hengel - mr.hengel.stephen@gmail.com
