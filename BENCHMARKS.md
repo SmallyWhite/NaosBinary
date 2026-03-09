@@ -1,25 +1,25 @@
-# 📊 NaosBinary v2.0 - Rapport de Performance Native
+# 📊 NaosBinary v2.0 - Performance & Routing Benchmarks
 
-**Version :** v2.0.0 (Native Core)
-**Environnement :** Windows 11 / GCC 15.2 (UCRT64) / x86_64
+Contrairement aux compresseurs statiques traditionnels (Zlib, LZ4, Zstd) qui s'exécutent de manière aveugle au détriment du CPU, **NaosBinary Native-x** intègre un routage intelligent adaptatif. 
 
-## 🏆 Analyse de Rupture
+Le moteur analyse l'entropie à la volée et bascule entre la **Réduction Algorithmique** et le **Contournement Matériel (Bypass)**. Toutes les opérations garantissent une intégrité absolue, vérifiée par empreinte cryptographique.
 
-La v2.0 abandonne l'implémentation Python pour un moteur C++ optimisé au niveau des registres. Ce changement permet d'atteindre la saturation de la bande passante RAM.
+## 🩺 Crash-Test Industriel : MedTech & Imagerie (Mars 2026)
 
-| Flux Type | Codec Mode | Ratio | Vitesse (MB/s) | Vitesse (Gbps) |
-|---|---|---|---|---|
-| **Alternating (0101)** | **BITPACK** | **0.125** | **4 900** | **39.2** |
-| **Sensor Drift** | **RLE+** | **0.0035** | **2 171** | **17.3** |
-| **Static Ones** | **RLE+** | **< 0.000001** | **2 211** | **17.6** |
+L'évaluation de la version 2.0 (Native-x) a été réalisée sur un volume de données d'imagerie médicale (IRM) réelles, exigeant une politique de tolérance zéro sur la corruption de données.
 
-## 🔎 Pourquoi ces chiffres sont réels ?
+| Paramètre | Résultat Validé |
+| :--- | :--- |
+| **Volume Traité** | 4.13 Go |
+| **Nombre de fichiers** | 15 783 fichiers séquentiels |
+| **Temps Total** | 180.39 secondes |
+| **Intégrité Cryptographique** | ✅ **100% SHA-256 MATCH (Lossless)** |
 
-### 1. Saturation de la Bande Passante
-À **4,8 Go/s**, NaosBinary ne traite plus la donnée, il la survole. L'algorithme est conçu pour que chaque cycle CPU traite plusieurs octets simultanément, rendant le débit indépendant de la complexité du flux.
+### Comportement du Cerveau Hybride en conditions réelles :
 
-### 2. Efficacité Énergétique
-En traitant les données **500x plus vite** que la version précédente, la consommation électrique par gigaoctet compressé est drastiquement réduite, répondant aux besoins critiques d'infrastructures d'énergie et d'IT.
+Durant ce traitement, le moteur de 96 Ko a pris plus de 15 000 décisions de routage à la volée, sans aucune fuite de mémoire :
 
-### 3. Mode "Pass-through" Intelligent
-Sur les données à haute entropie (déjà compressées ou chiffrées), le moteur bascule instantanément en mode neutre, garantissant une vitesse de **> 4 Go/s** sans aucun gonflement de fichier.
+* **🟩 OPTIMISATION DYNAMIQUE :** Déclenchée sur la majorité des coupes anatomiques. Le moteur a réduit le volume de manière chirurgicale, avec des pics de réduction atteignant un **ratio de 0.18** (plus de 80% d'écrasement volumétrique).
+* **🟦 ROUTAGE PASSIF :** Déclenché instantanément et silencieusement sur les fichiers locaux présentant un bruit statistique trop élevé. Le moteur a appliqué un ratio de 1.0000, sécurisant le transfert sans consommer de cycles CPU inutiles.
+
+*Note de l'ingénierie : La vitesse brute n'est plus la métrique principale de Native-x. La v2.0 priorise le déterminisme, la sécurité absolue du flux (0 bit perdu), et l'efficience énergétique sur architecture Edge.*
